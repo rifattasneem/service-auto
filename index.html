@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sevice Auto</title>
+
+   <link rel="shortcut icon" href="assets/image/favicon_io/favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="assets/image/favicon_io/favicon-16x16.png" type="image/x-icon">
+   <link rel="shortcut icon" href="assets/image/favicon_io/favicon-32x32.png" type="image/x-icon">
+   <link rel="shortcut icon" href="assets/image/favicon_io/android-chrome-192x192.png" type="image/x-icon">
+   <link rel="shortcut icon" href="assets/image/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+   <link rel="shortcut icon" href="assets/image/favicon_io/apple-touch-icon.png" type="image/x-icon">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+   <section class="top">
+      <header id="header">
+         <div class="container">
+            <nav class="navbar">
+               <a href="#" class="navbar-brand">
+                  <img src="assets/image/Logo.png" alt="Logo">
+               </a>
+               <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">About</a></li>
+                 <li><a href="#">Services</a></li>
+                 <li><a href="#">Prices</a></li>
+                 <li><a href="#">Contact</a></li>
+                 <li><ion-icon name="call-outline" class="icon-menu"></ion-icon>&nbsp;<p>0808 159 1234</p></li>
+               </ul>
+               <button class="navbar-toggler">
+                 <span></span>
+               </button>
+            </nav>
+         </div>
+      </header>
+      <div class="banner-carousel">
+         <div class="container">
+            <div class="banner-content">
+               <div class="banner text">
+                  <!-- Slider main container -->
+                  <div class="swiper banner">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">      
+                           <h1>Service</h1>
+                           <p>Over 35 Years Of Quality Auto Service</p>
+                           <a href="#" class="btn">Book Now</a>
+                        </div>
+                        <div class="swiper-slide">
+                           <h1>Service</h1>
+                           <p>Over 35 Years Of Quality Auto Service</p>
+                           <a href="#" class="btn">Book Now</a>
+                        </div>
+                        <div class="swiper-slide">
+                           <h1>Service</h1>
+                           <p>Over 35 Years Of Quality Auto Service</p>
+                           <a href="#" class="btn">Book Now</a>
+                        </div>
+                     </div>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="banner-arrow">
+            
+         </div>
+      </div>
+   </section>
+   <main>
+      
+   </main>
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script>
+      const swiper = new Swiper('.banner', {
+         loop: true,
+         autoplay: {
+            delay: 5000,
+         },
+         navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+         }
+      });
+   </script>
+   
+</body>
+</html>
