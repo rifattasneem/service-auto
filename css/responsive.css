@@ -8,6 +8,31 @@
   .container{
     width: 90%;
   }
+
+  .banner-content {
+    padding: 100px 0 233px;
+  }
+  .banner-arrow-container{
+    height: 300px;
+    width: 270px;
+  }
+
+  .swiper-button-prev {
+    top: 47%;
+    left: 90%;
+  }
+  .swiper-button-next {
+    top: 52%;
+    right: 9%;
+  }
+
+  .banner-content h1{
+    font-size: 70px;
+  }
+  .banner-content p{
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -18,9 +43,30 @@
   .navbar ul li:last-child {
     padding-left: 20px;
   }
+
+  .swiper-button-prev {
+    top: 49%;
+    left: 90%;
+  }
+  .swiper-button-next {
+    top: 54%;
+    right: 9%;
+  }
+
+  .banner-content {
+    padding: 70px 0 170px;
+  }
+  .banner-arrow-container{
+    height: 270px;
+    width: 230px;
+  }
 }
  
 @media (max-width: 767px) {
+  .btn{
+    padding: 10px 20px;
+    font-size: 15px;
+  }
   .navbar {
     display: block;
     padding: 0;
@@ -62,6 +108,7 @@
     background-color: transparent;
     color: #fff;
     outline: none;
+    border: none;
     padding: 0 5px;
     cursor: pointer;
   }
@@ -95,5 +142,17 @@
   .navbar .navbar-toggler.open-navbar-toggler span::after {
     transform: translateY(-3px) rotate(-45deg);
     /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+  }
+
+  .banner-arrow-container, .swiper-button-prev, .swiper-button-next{
+    display: none;
+  }
+
+  .banner-content h1{
+    font-size: 50px;
+  }
+  .banner-content p{
+    margin-bottom: 20px;
+    font-size: 15px;
   }
 }
