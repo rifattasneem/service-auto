@@ -5,6 +5,9 @@
 }
 
 @media (max-width: 1299px) {
+  p{
+    font-size: 16px!important;
+  }
   .container{
     width: 90%;
   }
@@ -31,7 +34,10 @@
   }
   .banner-content p{
     margin-bottom: 40px;
-    font-size: 16px;
+  }
+
+  .get-an-estimate p{
+    margin-top: 10px;
   }
 }
 
@@ -54,15 +60,25 @@
   }
 
   .banner-content {
-    padding: 70px 0 170px;
+    padding: 70px 0 250px;
   }
   .banner-arrow-container{
     height: 270px;
     width: 230px;
   }
+
+  .get-an-estimate {
+    padding: 85px 0 60px;
+  }
+  .get-an-estimate p{
+    font-size: 16px;
+  }
 }
  
 @media (max-width: 767px) {
+  p{
+    font-size: 15px!important;
+  }
   .btn{
     padding: 10px 20px;
     font-size: 15px;
@@ -148,11 +164,21 @@
     display: none;
   }
 
+  .banner-content {
+    padding: 100px 0 200px;
+  }
   .banner-content h1{
     font-size: 50px;
   }
   .banner-content p{
     margin-bottom: 20px;
-    font-size: 15px;
+  }
+
+  .get-an-estimate {
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
+    transform: translatey(-55px);
+  }
+  .g-est-container{
+    display: block;
   }
 }

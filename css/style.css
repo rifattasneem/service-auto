@@ -18,7 +18,7 @@ body{
 main{
    display: flex;
    flex-direction: column;
-   align-items: center;
+   /* align-items: center; */
 }
 .container{
    width: 1300px;
@@ -40,7 +40,6 @@ main{
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
-   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 header{
@@ -104,6 +103,8 @@ header{
    position: relative;
    padding-top: 100px;
    color: #ffffff;
+   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
 }
 .banner-content{
    /* display: grid;
@@ -125,7 +126,7 @@ header{
    height: 350px;
    width: 350px;
    background-color: var(--color-primary);
-   clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 100%);
+   clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%);
 }
 .swiper{
    position: unset;
@@ -146,4 +147,24 @@ header{
 .swiper-button-next {
    right: 6%;
    background-image: url("../assets/image/arrow-forward-outline.svg") !important;
+}
+
+/* Get an estimate */
+.get-an-estimate{
+   padding: 135px 0 110px;
+   background-color: var(--color-primary);
+   clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 79%);
+   transform: translatey(-85px);
+}
+.g-est-container{
+   display: flex;
+   justify-content: space-between;
+}
+.one, .two, .three, .four{
+   text-align: center;
+   margin-bottom: 30px;
+}
+.get-an-estimate p{
+   margin-top: 20px;
+   font-size: 20px;
 }
