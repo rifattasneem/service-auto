@@ -141,8 +141,50 @@
                   <h2>Service Certified</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel explicabo nulla autem id quam veritatis, dolores enim nemo repellat quaerat cum, provident, cupiditate doloribus eos quasi impedit veniam in delectus.</p>
                </div>
-               <div class="book-now"></div>
-               <div class="view-blog"></div>
+               <div class="book-now">
+                  <!-- Slider main container -->
+                  <div class="swiper bookNow">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide one">      
+                           <h1>Auto Repair Service</h1>
+                           <a href="#"><p>Book Now</p> <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
+                        </div>
+                        <div class="swiper-slide two">      
+                           <h1>Brake Service</h1>
+                           <a href="#"><p>Book Now</p> <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
+                        </div>
+                        <div class="swiper-slide three">      
+                           <h1>Wheel Service</h1>
+                           <a href="#"><p>Book Now</p> <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="view-blog">
+                  <div class="swiper blogs">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="assets/image/Layer-14.jpg" alt="Photo">     
+                           <h3>Which car service should I choose?</h3>
+                           <p>Lorem ipsum dolor sit amet adipisicing elit. Obcaecati magnam natus nesciunt!</p>
+                           <a href="#"><p>View Project</p> <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
+                        </div>
+                        <div class="swiper-slide">      
+                           <img src="assets/image/Layer-14.jpg" alt="Photo">     
+                           <h3>Tips to make you tire last longer</h3>
+                           <p>Lorem ipsum dolor sit amet adipisicing elit. Obcaecati magnam natus nesciunt!</p>
+                           <a href="#"><p>View Project</p> <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
+                        </div>
+                        <div class="swiper-slide">      
+                           <img src="assets/image/Layer-14.jpg" alt="Photo">     
+                           <h3>Which car service should I choose?</h3>
+                           <p>Lorem ipsum dolor sit amet adipisicing elit. Obcaecati magnam natus nesciunt!</p>
+                           <a href="#"><p>View Project</p> <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
+                        </div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                  </div>
+               </div>
             </div>
          </div>
       </section>
@@ -160,6 +202,23 @@
          navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+         }
+      });
+
+      const bookNow = new Swiper('.bookNow', {
+         loop: true,
+         effect: "fade",
+         autoplay: {
+            delay: 5000,
+         }
+      });
+
+      const blog = new Swiper(".blogs", {
+         loop: true,
+         slidesPerView: 2,
+         spaceBetween: 10,
+         autoplay: {
+            delay: 5000,
          }
       });
    </script>

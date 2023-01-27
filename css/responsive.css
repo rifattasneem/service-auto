@@ -62,6 +62,13 @@
   .gallery .view-all{
     margin-top: 20px;
   }
+
+  .view-blog{
+    width: fit-content;
+  }
+  .view-blog .blogs img {
+    height: 105px;
+  }
 }
 
 @media (max-width: 991px) {
