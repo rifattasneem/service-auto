@@ -13,7 +13,7 @@
    <link rel="shortcut icon" href="assets/image/favicon_io/android-chrome-512x512.png" type="image/x-icon">
    <link rel="shortcut icon" href="assets/image/favicon_io/apple-touch-icon.png" type="image/x-icon">
 
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
 
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/responsive.css">
@@ -192,7 +192,7 @@
 
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script src="js/script.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/swiper-bundle.min.js"></script>
    <script>
       const swiper = new Swiper('.banner', {
          loop: true,
@@ -215,10 +215,15 @@
 
       const blog = new Swiper(".blogs", {
          loop: true,
-         slidesPerView: 2,
+         slidesPerView: 1,
          spaceBetween: 10,
          autoplay: {
             delay: 5000,
+         },
+         breakpoints: {
+            1300: {
+               slidesPerView: 2
+            }
          }
       });
    </script>

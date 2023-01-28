@@ -12,7 +12,6 @@
 }
 body{
    font-family: 'Exo 2', sans-serif;
-   /* font-family: 'Open Sans', sans-serif; */
    color: #333;
 }
 main{
@@ -157,7 +156,8 @@ header{
    padding: 135px 0 110px;
    background-color: var(--color-primary);
    clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 79%);
-   transform: translatey(-85px);
+   /* transform: translatey(-85px); */
+   margin-top: -85px;
 }
 .g-est-container{
    display: flex;
@@ -174,7 +174,7 @@ header{
 
 /* Gallery */
 .gallery{
-   padding: 140px 0 180px;
+   padding: 140px 0 160px;
    background-color: #000000c2;
    background-image: url("../assets/image/Layer-14.jpg");
    background-blend-mode: color;
@@ -182,7 +182,8 @@ header{
    background-size: cover;
    background-position: center center;
    clip-path: polygon(0 0, 100% 7.5%, 100% 92.5%, 0% 100%);
-   transform: translatey(-167px);
+   /* transform: translatey(-167px); */
+   margin-top: -85px;
 }
 .gallery h2, .blog-articles .service-certified h2{
    padding: 0 10px;
@@ -239,13 +240,15 @@ header{
 .blog{
    padding: 140px 0;
    background-color: var(--color-primary);
-   clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 88%);
-   transform: translatey(-247px);
+   clip-path: polygon(0% 11%, 100% 0%, 100% 100%, 0% 89%);
+   /* transform: translatey(-247px); */
+   margin-top: -85px;
 }
 .blog-articles{
    display: grid;
-   grid-template-columns: 25% 25% 50%;
+   grid-template-columns: 24% 24% 48%;
    gap: 30px;
+   grid-auto-flow: dense;
 }
 .blog-articles .service-certified h2{
    padding: 0;
@@ -293,9 +296,9 @@ header{
    background-image: url("https://images.unsplash.com/photo-1613214149922-f1809c99b414?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }
 
-.view-blog{
-   width: 557px;
-}
+/* .view-blog{
+   max-width: 557px;
+} */
 .view-blog .blogs{
    text-align: start;
 }
