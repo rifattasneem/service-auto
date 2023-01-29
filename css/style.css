@@ -51,11 +51,13 @@ header{
    position: fixed;
    top: 0;
    z-index: 1000;
+   -webkit-backdrop-filter: blur(9px);
+   backdrop-filter: blur(9px);
 }
 .blur{
    background-color: #21212127;
-   -webkit-backdrop-filter: blur(9px);
-   backdrop-filter: blur(9px);
+   /* -webkit-backdrop-filter: blur(9px);
+   backdrop-filter: blur(9px); */
    transition: var(--transition);
 }
 .navbar {

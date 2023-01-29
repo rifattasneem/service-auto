@@ -181,6 +181,7 @@
     display: block;
     width: 100%;
     padding: 0;
+    /* backdrop-filter: blur(9px); */
     height: 100vh;
     max-height: 0;
     overflow: hidden;
