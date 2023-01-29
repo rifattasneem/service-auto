@@ -67,6 +67,26 @@
     grid-template-columns: 30% 30% 30%;
     gap: 40px;
   }
+
+  .service-container{
+    grid-template-columns: repeat(auto-fit, minmax(325px, 100%));
+  }
+  .service-description img{
+    margin-bottom: 20px;
+  }
+  .swiper.serviceSlider{
+    height: auto;
+  }
+  .swiper.serviceSlider .swiper-button-next, .swiper.serviceSlider .swiper-button-prev {
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: var(--color-primary);
+    transform: rotate(0deg);
+  }
+  .swiper.serviceSlider .swiper-button-next {
+    left: auto;
+  }
 }
 
 @media (max-width: 991px) {
@@ -139,6 +159,10 @@
     height: 200px;
     margin-bottom: 20px;
   }
+
+  .service{
+    padding: 60px 0;
+  }
 }
  
 @media (max-width: 767px) {
@@ -157,7 +181,6 @@
     display: block;
     width: 100%;
     padding: 0;
-    backdrop-filter: blur(9px);
     height: 100vh;
     max-height: 0;
     overflow: hidden;
@@ -291,5 +314,20 @@
   }
   .book-now .bookNow .swiper-wrapper .swiper-slide {
     padding: 50px 0;
+  }
+
+  .service{
+    padding: 40px 0;
+  }
+  .service-container{
+    grid-template-columns: repeat(auto-fit, minmax(280px, 100%));
+  }
+  .service-description{
+    display: block;
+    align-items: center;
+  }
+  .service-description img{
+    width: 70%;
+    margin: 30px 0 0 30px;
   }
 }
