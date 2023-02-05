@@ -2,6 +2,7 @@
 :root{
    --color-primary: #f4ca59;
    --color-secondary: #212121;
+   --color-grey: #8b8b8b56;
    --transition: all 0.3s ease-in-out;
 }
 
@@ -55,7 +56,7 @@ header{
    backdrop-filter: blur(9px);
 }
 .blur{
-   background-color: #21212127;
+   background-color: #00000029;
    /* -webkit-backdrop-filter: blur(9px);
    backdrop-filter: blur(9px); */
    transition: var(--transition);
@@ -149,11 +150,11 @@ header{
 .banner .swiper-button-prev {
    top: 45%;
    left: 94%;
-   background-image: url("../assets/image/arrow-back-outline.svg") !important;
+   background-image: url("../assets/image/arrow-left.svg") !important;
 }
 .banner .swiper-button-next {
    right: 6%;
-   background-image: url("../assets/image/arrow-forward-outline.svg") !important;
+   background-image: url("../assets/image/arrow-right.svg") !important;
 }
 
 /* Get an estimate */
@@ -261,7 +262,7 @@ header{
    color: var(--color-secondary);
 }
 
-.service-certified, .view-blog{
+.service-certified{
    padding: 50px 0;
 }
 
@@ -301,15 +302,25 @@ header{
    background-image: url("https://images.unsplash.com/photo-1613214149922-f1809c99b414?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }
 
-/* .view-blog{
-   max-width: 557px;
-} */
+.view-blog{
+   padding: 20px 0 50px;
+}
 .view-blog .blogs{
    text-align: start;
 }
 .view-blog .blogs img{
    height: 160px;
    margin-bottom: 13px;
+}
+.view-blog .blogs .swiper-wrapper{
+   padding-top: 30px;
+}
+.view-blog .swiper.blogs .swiper-horizontal>.swiper-pagination-bullets, .view-blog .swiper.blogs .swiper-pagination-bullets.swiper-pagination-horizontal {
+   top: 0;
+   left: 42%;
+}
+.view-blog .blogs .swiper-pagination-bullet-active {
+   background: var(--color-secondary);
 }
 .view-blog .blogs .swiper-wrapper .swiper-slide h3, .view-blog .blogs .swiper-wrapper .swiper-slide p{
    margin-bottom: 5px;
@@ -361,4 +372,119 @@ header{
 }
 .swiper.serviceSlider .swiper-button-next:after, .swiper.serviceSlider .swiper-button-prev:after {
    font-size: 20px;
+}
+
+/* Reviews */
+.testimonial .reviews{
+   display: grid;
+   grid-template-columns: 24% 74%;
+   gap: 30px;
+}
+.testimonial .reviews .review-header h2{
+   margin-bottom: 10px;
+}
+.testimonial .reviews .review-header h3, .send-message .booking h2{
+   margin-bottom: 5px;
+   font-size: 48px;
+   font-weight: 400;
+}
+.testimonial .reviews .stars{
+   margin-bottom: 20px;
+   font-size: 27px;
+   color: var(--color-primary);
+}
+
+.swiper.customerReviews{
+   padding-bottom: 50px;
+}
+/* .swiper.customerReviews .swiper-button-next, .swiper.customerReviews .swiper-button-prev{
+   left: auto;
+   right: 7px;
+   color: var(--color-primary);
+}
+.swiper.customerReviews .swiper-button-prev{
+   top: 29%;
+}
+.swiper.customerReviews .swiper-button-next{
+   top: 71%;
+}
+.swiper.customerReviews .swiper-button-next:after, .swiper.customerReviews .swiper-button-prev:after {
+   font-size: 20px;
+} */
+.customer-reviews .customerReviews .swiper-horizontal>.swiper-pagination-bullets, .customer-reviews .customerReviews .swiper-pagination-bullets.swiper-pagination-horizontal {
+   top: auto;
+   bottom: 15px;
+   left: 0;
+}
+.customer-reviews .customerReviews .swiper-pagination-bullet-active {
+   background: var(--color-primary);
+}
+.customer-reviews .customerReviews .swiper-slide{
+   padding: 30px;
+   border-left: 0.1px solid #21212150;
+   border-right: 0.1px solid #21212150;
+}
+.customer-reviews .user{
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+}
+.customer-reviews .user img{
+   width: 60px;
+   height: 60px;
+   margin-right: 10px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+.customer-reviews .user .stars{
+   margin-bottom: 0;
+   font-size: 20px;
+   color: var(--color-grey);
+}
+
+/* Send message */
+.send-message{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-items: center;
+   margin-top: 90px;
+   border-top: 0.1px solid var(--color-grey);
+}
+.send-message .booking{
+   width: 600px;
+   margin-left: auto;
+}
+.send-message .booking h3{
+   color: var(--color-grey);
+   text-transform: uppercase;
+}
+.send-message .booking h2{
+   margin: 20px 0;
+}
+.send-message .booking form input, .send-message .booking form textarea{
+   display: block;
+   width: 85%;
+   background: transparent;
+   padding: 15px;
+   margin-bottom: 14px;
+   font-family: 'Exo 2', sans-serif;
+   border: 1px solid var(--color-grey);
+   border-radius: 3px;
+}
+.send-message .booking form input:focus-visible, .send-message .booking form textarea:focus-visible{
+   outline: 0;
+}
+.btn-contact{
+   padding: 18px!important;
+   background: var(--color-primary)!important;
+   font-size: 17px;
+   color: #ffffff;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   border: none!important;
+   transition: var(--transition);
+   cursor: pointer;
+}
+.send-message .map iframe{
+   height: 600px;
 }

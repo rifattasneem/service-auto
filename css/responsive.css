@@ -20,13 +20,13 @@
     width: 270px;
   }
 
-  .swiper-button-prev {
+  .banner .swiper-button-prev {
     top: 47%;
-    left: 90%;
+    left: 92%;
   }
-  .swiper-button-next {
-    top: 52%;
-    right: 9%;
+  .banner .swiper-button-next {
+    top: 53%;
+    right: 7%;
   }
 
   .banner-content h1{
@@ -44,9 +44,11 @@
   .gallery{
     padding: 120px 0 140px;
   }
+  .gallery h2, .blog-articles .service-certified h2, .service-description h2, .testimonial .reviews .review-header h3, .send-message .booking h2{
+    font-size: 40px;
+  }
   .gallery h2{
     margin-bottom: 30px;
-    font-size: 40px;
   }
   .box img{
     width: 350px;
@@ -63,6 +65,10 @@
     margin-top: 20px;
   }
 
+  .view-blog .blogs img {
+    width: 100%;
+    object-fit: cover;
+  }
   .blog-articles{
     grid-template-columns: 30% 30% 30%;
     gap: 40px;
@@ -87,6 +93,23 @@
   .swiper.serviceSlider .swiper-button-next {
     left: auto;
   }
+
+  /* Reviews */
+  .customer-reviews .customerReviews .swiper-slide{
+    padding: 20px;
+  }
+  .customer-reviews .user img{
+    width: 50px;
+    height: 50px;
+  }
+  .customer-reviews .user .stars{
+    font-size: 12px;
+  }
+
+  /* Booking */
+  .send-message .booking{
+    width: 90%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -98,12 +121,12 @@
     padding-left: 20px;
   }
 
-  .swiper-button-prev {
-    top: 49%;
+  .banner .swiper-button-prev {
+    top: 44%;
     left: 90%;
   }
-  .swiper-button-next {
-    top: 54%;
+  .banner .swiper-button-next {
+    top: 51%;
     right: 9%;
   }
 
@@ -126,7 +149,7 @@
   .gallery{
     padding: 100px 0 120px;
   }
-  .gallery h2{
+  .gallery h2, .blog-articles .service-certified h2, .service-description h2, .testimonial .reviews .review-header h3, .send-message .booking h2{
     margin-bottom: 20px;
     font-size: 35px;
   }
@@ -162,6 +185,12 @@
 
   .service{
     padding: 60px 0;
+  }
+
+  /* Reviews */
+  .testimonial .reviews{
+    grid-template-columns: 34% 64%;
+    gap: 10px;
   }
 }
  
@@ -320,7 +349,7 @@
   .service{
     padding: 40px 0;
   }
-  .service-container{
+  .service-container, .testimonial .reviews{
     grid-template-columns: repeat(auto-fit, minmax(280px, 100%));
   }
   .service-description{
@@ -330,5 +359,20 @@
   .service-description img{
     width: 70%;
     margin: 30px 0 0 30px;
+  }
+
+  .send-message{
+    grid-template-columns: repeat(auto-fit, minmax(280px, 100%));
+    margin-top: 50px;
+  }
+  .send-message .booking {
+    margin: 0 auto;
+    padding: 50px 0 40px;
+  }
+  .send-message .booking form input, .send-message .booking form textarea {
+    width: 100%;
+  }
+  .send-message .map iframe{
+    height: 400px;
   }
 }
