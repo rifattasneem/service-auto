@@ -517,6 +517,18 @@ footer .email-sub .newsletter form input{
    border: 1px solid #8b8b8b;
    border-radius: 3px;
 }
+footer .email-sub .newsletter form #email{
+   border-right: 0;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+footer .email-sub .newsletter form .btn{
+   margin-left: -4px;
+   border-left: 0;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   cursor: pointer;
+}
 footer .email-sub .social{
    display: flex;
    justify-content: space-between;
