@@ -150,11 +150,11 @@ header{
 .banner .swiper-button-prev {
    top: 45%;
    left: 94%;
-   background-image: url("../assets/image/arrow-left.svg") !important;
+   background-image: url("../assets/image/arrow-right.svg") !important;
 }
 .banner .swiper-button-next {
    right: 6%;
-   background-image: url("../assets/image/arrow-right.svg") !important;
+   background-image: url("../assets/image/arrow-left.svg") !important;
 }
 
 /* Get an estimate */
