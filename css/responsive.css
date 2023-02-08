@@ -65,6 +65,9 @@
     margin-top: 20px;
   }
 
+  .blog {
+    padding: 160px 0;
+  }
   .view-blog .blogs img {
     width: 100%;
     object-fit: cover;
@@ -201,6 +204,10 @@
     gap: 10px;
   }
 
+  .send-message {
+    margin-top: 65px;
+  }
+
   footer .footer-links .contact-us{
     width: 37%;
   }
@@ -318,7 +325,7 @@
 
   /* Gallery */
   .gallery{
-    padding: 90px 0;
+    padding: 110px 0;
     clip-path: polygon(0 0, 100% 4%, 100% 96%, 0% 100%);
     margin-top: -115px;
   }
